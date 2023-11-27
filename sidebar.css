@@ -19,10 +19,27 @@ body{
     font-weight: bold;
   }
 
+.content_dashboard_user {
+    padding-left: 25%;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
 .content_profile_dosen {
     padding-left: 10%;
     font-weight: bold;
   }
+
+.content_profile {
+    padding-left: 10%;
+    font-weight: bold;
+  }
+
+.content_request_verifikasi {
+    padding-left: 17%;
+    font-weight: bold;
+  }
+
 
 .sidebar{
     position: fixed;
