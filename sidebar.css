@@ -24,7 +24,23 @@ body{
     font-size: 30px;
     font-weight: bold;
   }
-
+.content_isi_user {
+    padding-left: 20%;
+    font-size: 18px;
+  }
+.content_surat_nol {
+    font-size: 18px;
+    color: #b3b3b3;
+  }
+.content_tanggal {
+    padding-left: 20%;
+    font-size: 24px;
+  }
+.content_today_is {
+    padding-left: 20%;
+    font-size: 30px;
+    font-weight: bold;
+  }
 .content_profile_dosen {
     padding-left: 10%;
     font-weight: bold;
@@ -37,6 +53,11 @@ body{
 
 .content_request_verifikasi {
     padding-left: 17%;
+    font-weight: bold;
+  }
+
+.content_request_verifikasi_dashboard {
+    padding-left: 0%;
     font-weight: bold;
   }
 
