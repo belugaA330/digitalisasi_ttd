@@ -1,3 +1,57 @@
+<h2>Sistem Digitalisasi Tanda Tangan</h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Masuk Sebagai Dosen</h1>
+			<br>
+			<span>silahkan login</span>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button><a href="dashboard-admin.php">Log In</a></button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Masuk Sebagai Mahasiswa</h1>
+			<br>
+			<span>silahkan login</span>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button><a href="dashboard-user.php">Log In</a></button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Login Sebagai Mahasiswa?</h1>
+				<p>Login melalui tombol dibawah ini</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Login Sebagai Dosen?</h1>
+				<p>Login melalui tombol dibawah ini</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+</script>
+
+<style>
+
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
@@ -250,3 +304,14 @@ footer a {
     color: #3c97bf;
     text-decoration: none;
 }
+
+</style>
+
+<footer>
+	<p>
+		Created with <i class="fa fa-heart"></i> by
+		<a target="_blank" href="https://florin-pop.com">Florin Pop</a>
+		- Read how I created this and how you can join the challenge
+		<a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
+	</p>
+</footer>
