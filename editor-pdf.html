@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Live Editor PDF</title>
+</head>
+<body>
+  <div id="pdf"></div>
+
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+  <script>
+    const pdf = new PDFjs.PDFDocument();
+
+    // Load the PDF file.
+    pdf.open("https://storage.googleapis.com/qr-database/tesla.pdf");
+
+    // Add an image to the PDF.
+    const image = new PDFjs.Image();
+    image.src = "https://storage.googleapis.com/qr-database/qrcode_www.google.co.id.png";
+    pdf.pages.get(1).addImage(image);
+
+    // Render the PDF.
+    pdf.render("pdf");
+  </script>
+</body>
+</html>
